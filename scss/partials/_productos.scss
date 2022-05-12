@@ -1,0 +1,213 @@
+@import "../variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
+.contenido1{
+    display: flex;
+    justify-content: $alinear;
+    flex-direction: row;
+
+    .contenedor{
+        
+        @extend .contenedor;
+        
+        &:hover{
+            box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.42);
+        transform: scale(1.04);
+        border-radius: 10px;
+        }
+    }
+
+    .tajeta{
+        width: 250px;
+        cursor: pointer;
+        transition: all 400ms ease;
+
+        &:hover{
+            box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.42);
+            border-radius: 10px;
+        }
+    }
+
+    .imagen img{
+        width: $ancho;
+        margin-top: 15px;
+        
+
+    
+    
+}
+.informacion{
+    text-align: $alinear;
+}
+
+.informacion h2{
+    font-size: $size1;
+    font-weight: bold;
+    font-family: $font2;
+
+}
+.informacion p{
+    @include tarjeta-p;
+
+}
+
+.informacion span{
+    
+    font-size: 17px;
+    margin-right: 170px;
+}
+
+.informacion input{
+    @include boton;
+
+    &:hover{
+        background-color: $color2;
+    }
+}
+
+}
+
+
+.contenido2{
+    display: flex;
+    justify-content: $alinear;
+    flex-direction: row;
+    margin-top: -30px;
+   
+    .contenedor{
+        
+        @extend .contenedor;
+        
+        &:hover{
+            box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.42);
+        transform: scale(1.04);
+        border-radius: 10px;
+        }
+    }
+
+    .tajeta{
+        width: 250px;
+        cursor: pointer;
+        transition: all 400ms ease;
+
+        &:hover{
+            box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.42);
+            border-radius: 10px;
+        }
+    }
+
+    .imagen img{
+        width: $ancho;
+        margin-top: 15px;
+        
+
+    
+    
+}
+.informacion{
+    text-align: $alinear;
+}
+
+.informacion h2{
+    font-size: $size1;
+    font-weight: bold;
+    font-family: $font2;
+
+}
+.informacion p{
+    @include tarjeta-p;
+
+}
+
+.informacion span{
+    
+    font-size: 17px;
+    margin-right: 170px;
+}
+
+.informacion input{
+    @include boton;
+
+    &:hover{
+        background-color: $color2;
+    }
+}
+
+}
+
+.contenido3{
+    display: flex;
+    justify-content: $alinear;
+    flex-direction: row;
+    margin-top: -30px;
+    margin-bottom: 100px;
+
+    .contenedor{
+        
+        @extend .contenedor;
+        
+        &:hover{
+            box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.42);
+        transform: scale(1.04);
+        border-radius: 10px;
+        }
+    }
+
+    .tajeta{
+        width: 250px;
+        cursor: pointer;
+        transition: all 400ms ease;
+
+        &:hover{
+            box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.42);
+            border-radius: 10px;
+        }
+    }
+
+    .imagen img{
+        width: $ancho;
+        margin-top: 15px;
+        
+
+    
+    
+}
+.informacion{
+    text-align: $alinear;
+}
+
+.informacion h2{
+    font-size: $size1;
+    font-weight: bold;
+    font-family: $font2;
+
+}
+.informacion p{
+    @include tarjeta-p;
+
+}
+
+.informacion span{
+    
+    font-size: 17px;
+    margin-right: 170px;
+}
+
+.informacion input{
+    @include boton;
+
+    &:hover{
+        background-color: $color2;
+    }
+}
+    
+
+}
+
+
+
+
+
+
+

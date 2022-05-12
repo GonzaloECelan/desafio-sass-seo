@@ -1,0 +1,21 @@
+@import "../variables";
+
+@mixin boton {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: $size1;
+    background-color: $color1;
+    color: $color4;
+    padding: 5px 20px 5px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@mixin tarjeta-p {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-family: $font2;
+    font-size: $size1;
+    margin-left: 10px;
+    
+}

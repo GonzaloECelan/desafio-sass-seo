@@ -1,0 +1,76 @@
+@import "../variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
+
+header{
+
+    @extend .navegador;
+
+    nav{
+        align-items: $alinear;
+        margin-right: 750px;
+    }
+
+    nav a{
+        margin: 25px;
+        color: $color4;
+        font-family: $font1;
+        font-size: $size2;
+        text-decoration: none;
+        position: relative;
+
+        &::after{
+            content:"";
+        width: 0;
+        height: 3px;
+        background-color: $color2;
+        position: absolute;
+        bottom: -8px;
+        right: 50%;
+        transition: all 0.4s ease;
+        will-change: width;
+        }
+
+        &:hover::after{
+            width: $ancho;
+            right: 0;
+            
+        }
+
+        &:hover{
+            color: $color2;
+        }
+    }
+
+    .logotipo{
+    width: 105px;
+    height: 90px;
+    padding-left: 100px;
+}
+
+    
+
+}
+
+.pedidos{
+    display: flex;
+    justify-content: $alinear;
+    background-image: $color3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: $ancho;
+    height: 50px;
+    box-shadow: 0 1px 10px (0,0,0,0.5);
+
+    .productos{
+        color:$color1;
+        font-family:$font1;
+        font-size: 20px;
+        text-align: $alinear;
+        margin-top: 5px;
+        position: absolute;
+    
+    }
+}
+

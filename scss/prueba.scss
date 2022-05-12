@@ -1,0 +1,16 @@
+@import "./variables";
+@import "sass2/extend";
+@import "sass2/mixins";
+@import "partials/footer";
+@import "partials/header";
+@import "partials/productos";
+@import "partials/nosotros";
+@import "partials/contacto";
+@import "partials/galeria";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

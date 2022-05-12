@@ -1,0 +1,47 @@
+@import "../variables";
+@import "../sass2/extend";
+@import "../sass2/mixins";
+
+.contenedor-img{
+    width: $ancho;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    gap: 20px;
+
+    .caja figure{
+        width: $ancho;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            transform: scale(1.04);
+        box-shadow: 0 0 3em rgba(8, 7, 7, 0.6);
+        border-radius: 10px;
+        }
+    }
+    img{
+        width: $ancho;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .caja1{
+        grid-column: span 2;
+    }
+    .caja4{
+        grid-row: span 2;
+    }
+    
+
+
+
+
+    
+    
+}
